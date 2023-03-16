@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Work Sans';
+  src: url(./font/WorkSans-VariableFont_wght.ttf) format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  background-color: hsl(212, 46%, 89%);
+  font-size: 62.5%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 95vh;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 25rem;
+  height: 37rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.qr {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2.3rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: hsl(218, 44%, 22%);
+}
+
+p {
+  color: hsl(220, 15%, 55%);
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-top: 1rem;
+}
+
+footer {
+  background-color: hsl(212, 46%, 89%);
+  padding: 1rem;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 374px) {
+  .container {
+    height: 100vh;
+  }
+
+  .card {
+    width: 20rem;
+    height: 32rem;
+    border-radius: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 0.5rem;
+  }
+}
